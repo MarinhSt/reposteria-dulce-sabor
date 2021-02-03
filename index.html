@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+		/>
+		<link rel="stylesheet" href="./style/style.css" />
+		<link rel="stylesheet" href="./modules/menu/menu.css" />
+		<link
+			rel="icon"
+			href="https://img.icons8.com/emoji/48/000000/cupcake-emoji.png"
+		/>
+		<title>Dulce Sabor</title>
+	</head>
+	<body>
+		<div class="general-container">
+			<header class="header">
+				<section class="container">
+					<div class="header__logo">
+						<a href="./index.html"
+							><img
+								src="https://img.icons8.com/emoji/48/000000/cupcake-emoji.png"
+						/></a>
+					</div>
+					<button class="menu-btn">
+						<img
+							id="abrir-menu"
+							src="./fi-rr-align-justify.svg"
+							alt="icono desplegar el menu"
+						/>
+						<img
+							id="cerrar-menu"
+							class="none"
+							src="./fi-rr-cross.svg"
+							alt="icono cerrar el menu"
+						/>
+					</button>
+					<nav class="menu none">
+						<a href="#home">Inicio</a>
+						<a href="#about">Nosotros</a>
+						<a href="#store">Tienda</a>
+						<a href="#contacto">Contacto</a>
+					</nav>
+				</section>
+			</header>
+			<main>
+				<section id="home" class="home">
+					<div>
+						<h1>
+							Bienvenidos a
+							<strong class="pink">Dulce Sabor</strong>
+						</h1>
+						<p>El sabor de colombia</p>
+						<button>PRODUCTOS</button>
+					</div>
+				</section>
+				<section id="about" class="about">
+					<div class="about--description flex-grow-shrink">
+						<h2>SOBRE <strong class="pink">NOSOTROS</strong></h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing
+							elit. Ipsam, quaerat pariatur eligendi et obcaecati
+							placeat aperiam praesentium, exercitationem fugiat
+							quos nemo perspiciatis asperiores tempora quae
+							adipisci sit, illum iure repudiandae?
+						</p>
+						<button>PRODUCTOS</button>
+					</div>
+					<div class="about--img">
+						<div class="about--img__cont flex-grow-shrink">
+							<img src="./img/sweets-1.jpeg" alt="" />
+						</div>
+					</div>
+				</section>
+				<section id="store" class="store">
+                    <h2>Nuestra <strong class="pink">Tienda</strong></h2>
+                </section>
+			</main>
+			<footer></footer>
+		</div>
+		<script src="./modules/menu/menu.js"></script>
+		<script src="./modules/store/store-filter.js"></script>
+		<script src="./modules/modal/modal.js"></script>
+		<script src="./modules/cart/cart.js"></script>
+	</body>
+</html>
