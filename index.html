@@ -9,6 +9,7 @@
 		/>
 		<link rel="stylesheet" href="./style/style.css" />
 		<link rel="stylesheet" href="./modules/menu/menu.css" />
+		<link rel="stylesheet" href="./modules/store/store.css" />
 		<link
 			rel="icon"
 			href="https://img.icons8.com/emoji/48/000000/cupcake-emoji.png"
@@ -54,7 +55,7 @@
 							<strong class="pink">Dulce Sabor</strong>
 						</h1>
 						<p>El sabor de colombia</p>
-						<button>PRODUCTOS</button>
+						<button class="button">PRODUCTOS</button>
 					</div>
 				</section>
 				<section id="about" class="about">
@@ -67,7 +68,7 @@
 							quos nemo perspiciatis asperiores tempora quae
 							adipisci sit, illum iure repudiandae?
 						</p>
-						<button>PRODUCTOS</button>
+						<button class="button">PRODUCTOS</button>
 					</div>
 					<div class="about--img">
 						<div class="about--img__cont flex-grow-shrink">
@@ -76,10 +77,305 @@
 					</div>
 				</section>
 				<section id="store" class="store">
-                    <h2>Nuestra <strong class="pink">Tienda</strong></h2>
-                </section>
+					<h2 class="store__title">
+						Nuestra <strong class="pink">Tienda</strong>
+					</h2>
+					<div class="search">
+						<figure class="search__container--img">
+							<img class="search__img" src="./fi-rr-search.svg" alt=""  />
+						</figure>
+						<input class="search__input"
+							type="search"
+							name=""
+							id=""
+							placeholder="buscar"
+						/>
+					</div>
+					<div class="filter--container">
+						<div class="filter--tittle">
+							<span>FILTAR</span>
+							<figure
+								class="filter--tittle__container--img container--img"
+							>
+								<img
+									class="filter--tittle__img"
+									src="./fi-rr-angle-small-down.svg"
+									alt="icono desplegar filtro"
+								/>
+							</figure>
+						</div>
+						<ul class="filter ">
+							<li class="filter__element">
+								<button class="button">TODOS</button>
+							</li>
+							<li class="filter__element">
+								<button class="button">CAKES</button>
+							</li>
+							<li class="filter__element">
+								<button class="button">SWEETS</button>
+							</li>
+							<li class="filter__element">
+								<button class="button">CUPCKAES</button>
+							</li>
+							<li class="filter__element">
+								<button class="button">DOUGHNUTS</button>
+							</li>
+						</ul>
+					</div>
+					<div class="stock">
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cake-1.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cake-2.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cake-3.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cupcake-1.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cupcake-2.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cupcake-3.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/doughnut-1.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/doughnut-2.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/doughnut-3.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/sweets-1.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/sweets-2.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="cart">
+							<figure class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/sweets-3.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="cart--body">
+								<p class="cart__name">element stock</p>
+								<span class="cart__value">$ 12.500</span>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
-			<footer></footer>
+			<footer class="footer">
+				<div class="container">
+					<h4>
+						2021 Dulce Sabor. Creado por<br />
+						<a href="https://github.com/MarinhSt" target="_blanck"
+							>Santiago Marin Henao</a
+						>
+					</h4>
+				</div>
+			</footer>
 		</div>
 		<script src="./modules/menu/menu.js"></script>
 		<script src="./modules/store/store-filter.js"></script>

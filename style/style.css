@@ -23,6 +23,25 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.button{
+    border: .2rem solid  var(--mainBlack);
+    border-radius: 1rem;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+    transition-property: background-color, color;
+    transition-duration: .2s;
+}
+
+.button:hover{
+    background-color: var(--mainBlack);
+    color: var(--mainPink);
+}
+.button:focus{
+    outline: none;
+}
 /*********** header ************/
 .container{
 	max-width: 104rem;
@@ -32,7 +51,7 @@ body{
 
 .header{
 	background-color: var(--mainWhite);
-	/* border-bottom: .2rem solid #840eeb; */
+	border-bottom: .2rem solid #eeeeee;
 	position: sticky;
 	top: 0;
 	width: 100%;
@@ -89,8 +108,8 @@ body{
     display: flex;
     padding: 6rem 0;
     flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
 }
 .about--description{
     max-width: 50rem;
@@ -141,22 +160,25 @@ body{
 }
 
 
-/************ store *************/
+/************ footer *************/
 
-.store{
-    background-color: var(--mainGrey);
-    height: 60rem;
-    padding: 5rem;
+
+.footer{
+    background-color: var(--first-color);
+    color: var(--second-color);
+    width: 100%;
+    height: 8rem;
 }
-
-.store h2{
-    font-size: 3rem;
+.footer .container{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.store .pink{
-    display: inline-block;
+.footer .container a{
+    color: var(--second-color);
+    text-decoration: none;
 }
-
 
 /************ general *************/
 *{

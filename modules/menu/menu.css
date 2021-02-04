@@ -29,7 +29,7 @@
 	font-size: 3rem;
 	padding: 3rem;
 	width: 100%;
-	/* border-bottom: .2rem solid #840eeb; */
+	border-bottom: .2rem solid #eeeeee;
 }
 .none {
 	display: none;
