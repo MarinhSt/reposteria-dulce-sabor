@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+:root{
+	--mainPink: #ef7998;
+	--mainYellow: #f9e494;
+	--mainWhite: #fff;
+	--mainBlack: #000;
+	--yellowTrans: #f9e49480;
+	--mainGrey: #eeeeee;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+	font-family: "Kaushan Script", cursive;
+	background: var(--mainWhite);
+	color: var(--mainBlack);
+}
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    border: .2rem solid  var(--mainBlack);
+    border-radius: 1rem;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem 0;
+    transition-property: background-color, color;
+    transition-duration: .2s;
+}
+
+.button:hover{
+    background-color: var(--mainBlack);
+    color: var(--mainPink);
+}
+.button:focus{
+    outline: none;
+}
+
+.button--pink{
+    border: .2rem solid  var(--mainPink);
+    color: var(--mainPink);
+}
+.button--pink:hover{
+    background-color:var(--mainPink);
+    color: var(--mainBlack);
+}
+
+
+/*********** header ************/
+.general-container{
+	max-width: 104rem;
+	margin: auto;
+}
+
+.header{
+	background-color: var(--mainWhite);
+	border-bottom: .2rem solid #eeeeee;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 6rem;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header .container{
+    display: flex;
+    align-items:center;
+}
+
+.header__log{
+	margin: auto 2rem;
+	height: 100%;
+}
+.header__logo a{
+    height: 48px;
+    width: 48px;
+}
+
+
+.cart-btn{
+    position: relative;
+	background-color: var(--mainWhite);
+	margin: auto 2rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.cart-btn img {
+	width: 30px;
+	height: 30px;
+}
+
+
+
+/*********** home ************/
+
+.home{
+	background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+		url("../img/headerBcg.jpeg");
+	height: calc(100vh - 6rem);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.home div{
+	text-align: center;
+	font-size: 2rem;
+}
+.pink{
+    display: block;
+    font-size: 5rem;
+	color: var(--mainPink);
+}
+
+
+/*********** About ************/
+
+.about{
+    display: flex;
+    padding: 6rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about--description{
+    max-width: 50rem;
+    margin: auto 5rem;
+}
+.about--description strong{
+    font-size: 4rem;
+}
+.about--description p{
+    margin: 4rem 0;
+}
+
+.flex-grow-shrink{
+    flex: 1 1;
+}
+
+.about--img{
+    margin: 10rem 6rem;
+    margin-right: 3rem;
+    display: flex;
+}
+.about--img__cont{
+    position: relative;
+    min-width: 24rem;
+    max-width: 50rem;
+}
+.about--img__cont::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -3rem;
+    left: -3rem;
+    width: 100% ;
+    height: 100%;
+    outline: .5rem solid var(--mainYellow);
+    transition-property: top left;
+    transition-duration:  1s;
+    transition-timing-function: linear;
+}
+.about--img__cont:hover:before{
+    top: 0;
+    left: 0;
+}
+.about--img img{
+    float: left;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/************ footer *************/
+
+
+.footer{
+    background-color: var(--first-color);
+    color: var(--second-color);
+    width: 100%;
+    height: 8rem;
+}
+.footer .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer .container a{
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+/************ general *************/
+*{
+    box-sizing: border-box;
+}
+.none {
+	display: none;
+}

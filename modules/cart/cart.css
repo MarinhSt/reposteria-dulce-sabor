@@ -1,0 +1,89 @@
+.cart{
+	background-color: var(--mainGrey);
+	height: calc(100vh - 6rem);
+    width: 100%;
+	top: 6rem;
+	right: 0;
+	position: fixed;
+}
+
+
+
+.cards{
+    overflow: auto;
+    padding: 0 3rem;
+    max-height: calc(100vh - 6rem - 16rem);
+}
+.cart--element{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart__container--img{
+    /* border: 1rem solid #9a9a9a; */
+    overflow: hidden;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+}
+.cart__img{
+    object-position: center;
+    object-fit: auto;
+    height: 100%;
+}
+
+
+
+
+.cart--element__title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cart__container--delete{
+    width: 3rem;
+}
+
+.cart__delete{
+    width: 100%;
+}
+
+
+
+
+
+.cart--footer{
+    border-top: .2rem solid #d1d1d1;
+    padding: 1rem;
+    font-size: 2rem;
+    height: 16rem;
+}
+
+.cart--total{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+	align-content: center;
+}
+
+.cart--total__text{
+    font-size: 3rem;
+}
+.cart--total__value{
+    align-self: center;
+}
+
+.cart--buttons{
+    display: flex;
+    justify-content: space-around;
+	align-content: center;
+}
+
+/************ general *************/
+
+.none {
+	display: none;
+}

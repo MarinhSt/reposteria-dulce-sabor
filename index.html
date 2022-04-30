@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+		/>
+		<link rel="stylesheet" href="./style/style.css" />
+		<link rel="stylesheet" href="./modules/menu/menu.css" />
+		<link rel="stylesheet" href="./modules/store/store.css" />
+		<link rel="stylesheet" href="./modules/cart/cart.css" />
+		<link
+			rel="icon"
+			href="https://img.icons8.com/emoji/48/000000/cupcake-emoji.png"
+		/>
+		<title>Dulce Sabor</title>
+	</head>
+	<body>
+		<div class="general-container">
+			<header class="header">
+				<section class="container">
+					<div class="header__logo">
+						<a href="./index.html"
+							><img
+								src="https://img.icons8.com/emoji/48/000000/cupcake-emoji.png"
+						/></a>
+					</div>
+					<button class="menu-btn">
+						<img
+							id="abrir-menu"
+							src="./fi-rr-align-justify.svg"
+							alt="icono desplegar el menu"
+						/>
+						<img
+							id="cerrar-menu"
+							class="none"
+							src="./fi-rr-cross.svg"
+							alt="icono cerrar el menu"
+						/>
+					</button>
+					<nav class="menu none">
+						<a href="#home">Inicio</a>
+						<a href="#about">Nosotros</a>
+						<a href="#store">Tienda</a>
+						<a href="#contacto">Contacto</a>
+					</nav>
+				</section>
+				<button class="cart-btn">
+					<img
+						id="cart-btn"
+						src="./fi-rr-shopping-cart.svg"
+						alt="icono desplegar el menu"
+					/>
+				</button>
+				<nav class="cart none">
+					<div class="cards">
+						<div class="cart--element">
+							<picture class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cake-1.jpeg"
+									alt=""
+								/>
+							</picture>
+							<div class="cart--element__text">
+								<h6 class="cart--element__title">
+									element stock
+								</h6>
+								<span class="cart--element__value"
+									>$ 12.500</span
+								>
+							</div>
+							<picture class="cart__container--delete">
+								<img
+									class="cart__delete"
+									src="./fi-rr-trash.svg"
+									alt=""
+								/>
+							</picture>
+						</div>
+						<div class="cart--element">
+							<picture class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cake-2.jpeg"
+									alt=""
+								/>
+							</picture>
+							<div class="cart--element__text">
+								<h6 class="cart--element__title">
+									element stock
+								</h6>
+								<span class="cart--element__value"
+									>$ 12.500</span
+								>
+							</div>
+							<picture class="cart__container--delete">
+								<img
+									class="cart__delete"
+									src="./fi-rr-trash.svg"
+									alt=""
+								/>
+							</picture>
+						</div>
+						<div class="cart--element">
+							<picture class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cake-3.jpeg"
+									alt=""
+								/>
+							</picture>
+							<div class="cart--element__text">
+								<h6 class="cart--element__title">
+									element stock
+								</h6>
+								<span class="cart--element__value"
+									>$ 12.500</span
+								>
+							</div>
+							<picture class="cart__container--delete">
+								<img
+									class="cart__delete"
+									src="./fi-rr-trash.svg"
+									alt=""
+								/>
+							</picture>
+						</div>
+					</div>
+					<div class="cart--footer">
+						<div class="cart--total">
+							<h5 class="cart--total__text">Total</h5>
+							<h5 class="cart--total__value">
+								<span>$ </span>35.000
+							</h5>
+						</div>
+						<div class="cart--buttons">
+							<button class="button">DESCARTAR</button>
+							<button class="button button--pink">ENVIAR</button>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<section id="home" class="home">
+					<div>
+						<h1>
+							Bienvenidos a
+							<strong class="pink">Dulce Sabor</strong>
+						</h1>
+						<p>El sabor de colombia</p>
+						<a href="#store"
+							><button class="button">PRODUCTOS</button></a
+						>
+					</div>
+				</section>
+				<section id="about" class="about">
+					<div class="about--description flex-grow-shrink">
+						<h2>SOBRE <strong class="pink">NOSOTROS</strong></h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing
+							elit. Ipsam, quaerat pariatur eligendi et obcaecati
+							placeat aperiam praesentium, exercitationem fugiat
+							quos nemo perspiciatis asperiores tempora quae
+							adipisci sit, illum iure repudiandae?
+						</p>
+						<a href="#store"
+							><button class="button">PRODUCTOS</button></a
+						>
+					</div>
+					<div class="about--img">
+						<div class="about--img__cont flex-grow-shrink">
+							<img src="./img/sweets-1.jpeg" alt="" />
+						</div>
+					</div>
+				</section>
+				<section id="store" class="store">
+					<h2 class="store__title">
+						Nuestra <strong class="pink">Tienda</strong>
+					</h2>
+					<div class="search">
+						<figure class="search__container--img">
+							<img
+								class="search__img"
+								src="./fi-rr-search.svg"
+								alt=""
+							/>
+						</figure>
+						<input
+							class="search__input"
+							type="search"
+							name=""
+							id=""
+							placeholder="buscar"
+						/>
+					</div>
+					<div class="filter--container">
+						<div class="filter--tittle">
+							<span>FILTAR</span>
+							<figure
+								class="filter--tittle__container--img container--img"
+							>
+								<img
+									class="filter--tittle__img"
+									src="./fi-rr-angle-small-down.svg"
+									alt="icono desplegar filtro"
+								/>
+							</figure>
+						</div>
+						<div class="filter none">
+							<button class="button filter__button" data-filter="todos">
+								TODOS
+							</button>
+							<button class="button filter__button" data-filter="pastel">
+								PASTELES
+							</button>
+							<button class="button filter__button" data-filter="cupcakes">
+								CUPCAKES
+							</button>
+							<button class="button filter__button" data-filter="dulce">
+								DULCES
+							</button>
+							<button class="button filter__button" data-filter="rosquilla">
+								ROSQUILLAS
+							</button>
+						</div>
+					</div>
+					<div class="stock">
+						<div class="card pastel">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/cake-1.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">pastel</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card pastel" >
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/cake-2.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">pastel</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card pastel">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/cake-3.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">pastel</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card cupcakes">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/cupcake-1.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">cupcakes</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card cupcakes">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/cupcake-2.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">cupcakes</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card cupcakes">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/cupcake-3.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">cupcakes</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card rosquilla">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/doughnut-1.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">rosquilla</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card rosquilla">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/doughnut-2.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">rosquilla</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card rosquilla">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/doughnut-3.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">rosquilla</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card dulce">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/sweets-1.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">dulce</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card dulce">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/sweets-2.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">dulce</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+						<div class="card dulce">
+							<figure class="card__container--img">
+								<img
+									class="card__img"
+									src="./img/sweets-3.jpeg"
+									alt=""
+								/>
+								<figure class="shopping--cart--add">
+									<img
+										class="shopping--cart__img"
+										src="./fi-rr-shopping-cart-add.svg"
+										alt=""
+									/>
+								</figure>
+							</figure>
+							<div class="card--body">
+								<p class="card__name">dulce</p>
+								<span class="card__value">$ 12.500</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<h4>
+						2021 Dulce Sabor. Creado por<br />
+						<a href="https://github.com/MarinhSt" target="_blanck"
+							>Santiago Marin Henao</a
+						>
+					</h4>
+				</div>
+			</footer>
+		</div>
+		<script src="./modules/menu/menu.js"></script>
+		<script src="./modules/store/store-filter.js"></script>
+		<script src="./modules/modal/modal.js"></script>
+		<script src="./modules/cart/cart.js"></script>
+	</body>
+</html>

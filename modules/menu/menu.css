@@ -1,0 +1,39 @@
+.menu-btn {
+  order: -1;
+  background-color: var(--mainWhite);
+  margin: auto 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.menu-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu {
+  background-color: var(--mainWhite);
+  position: fixed;
+  top: 6rem;
+  right: 0;
+  width: 100%;
+  height: calc(100vh - 6rem);
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-content: center;
+  min-height: max-content;
+  overflow: auto;
+}
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--second-color);
+  font-size: 3rem;
+  padding: 3rem;
+  width: 100%;
+  border-bottom: 0.2rem solid #eeeeee;
+}
+.none {
+  display: none;
+}
