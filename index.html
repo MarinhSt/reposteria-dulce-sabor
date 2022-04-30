@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="./style/style.css" />
 		<link rel="stylesheet" href="./modules/menu/menu.css" />
 		<link rel="stylesheet" href="./modules/store/store.css" />
+		<link rel="stylesheet" href="./modules/cart/cart.css" />
 		<link
 			rel="icon"
 			href="https://img.icons8.com/emoji/48/000000/cupcake-emoji.png"
@@ -46,6 +47,101 @@
 						<a href="#contacto">Contacto</a>
 					</nav>
 				</section>
+				<button class="cart-btn">
+					<img
+						id="cart-btn"
+						src="./fi-rr-shopping-cart.svg"
+						alt="icono desplegar el menu"
+					/>
+				</button>
+				<nav class="cart none">
+					<div class="cards">
+						<div class="cart--element">
+							<picture class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cake-1.jpeg"
+									alt=""
+								/>
+							</picture>
+							<div class="cart--element__text">
+								<h6 class="cart--element__title">
+									element stock
+								</h6>
+								<span class="cart--element__value"
+									>$ 12.500</span
+								>
+							</div>
+							<picture class="cart__container--delete">
+								<img
+									class="cart__delete"
+									src="./fi-rr-trash.svg"
+									alt=""
+								/>
+							</picture>
+						</div>
+						<div class="cart--element">
+							<picture class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cake-2.jpeg"
+									alt=""
+								/>
+							</picture>
+							<div class="cart--element__text">
+								<h6 class="cart--element__title">
+									element stock
+								</h6>
+								<span class="cart--element__value"
+									>$ 12.500</span
+								>
+							</div>
+							<picture class="cart__container--delete">
+								<img
+									class="cart__delete"
+									src="./fi-rr-trash.svg"
+									alt=""
+								/>
+							</picture>
+						</div>
+						<div class="cart--element">
+							<picture class="cart__container--img">
+								<img
+									class="cart__img"
+									src="./img/cake-3.jpeg"
+									alt=""
+								/>
+							</picture>
+							<div class="cart--element__text">
+								<h6 class="cart--element__title">
+									element stock
+								</h6>
+								<span class="cart--element__value"
+									>$ 12.500</span
+								>
+							</div>
+							<picture class="cart__container--delete">
+								<img
+									class="cart__delete"
+									src="./fi-rr-trash.svg"
+									alt=""
+								/>
+							</picture>
+						</div>
+					</div>
+					<div class="cart--footer">
+						<div class="cart--total">
+							<h5 class="cart--total__text">Total</h5>
+							<h5 class="cart--total__value">
+								<span>$ </span>35.000
+							</h5>
+						</div>
+						<div class="cart--buttons">
+							<button class="button">DESCARTAR</button>
+							<button class="button button--pink">ENVIAR</button>
+						</div>
+					</div>
+				</nav>
 			</header>
 			<main>
 				<section id="home" class="home">
@@ -55,7 +151,9 @@
 							<strong class="pink">Dulce Sabor</strong>
 						</h1>
 						<p>El sabor de colombia</p>
-						<button class="button">PRODUCTOS</button>
+						<a href="#store"
+							><button class="button">PRODUCTOS</button></a
+						>
 					</div>
 				</section>
 				<section id="about" class="about">
@@ -68,7 +166,9 @@
 							quos nemo perspiciatis asperiores tempora quae
 							adipisci sit, illum iure repudiandae?
 						</p>
-						<button class="button">PRODUCTOS</button>
+						<a href="#store"
+							><button class="button">PRODUCTOS</button></a
+						>
 					</div>
 					<div class="about--img">
 						<div class="about--img__cont flex-grow-shrink">
@@ -82,9 +182,14 @@
 					</h2>
 					<div class="search">
 						<figure class="search__container--img">
-							<img class="search__img" src="./fi-rr-search.svg" alt=""  />
+							<img
+								class="search__img"
+								src="./fi-rr-search.svg"
+								alt=""
+							/>
 						</figure>
-						<input class="search__input"
+						<input
+							class="search__input"
 							type="search"
 							name=""
 							id=""
@@ -104,33 +209,33 @@
 								/>
 							</figure>
 						</div>
-						<ul class="filter ">
-							<li class="filter__element">
-								<button class="button">TODOS</button>
-							</li>
-							<li class="filter__element">
-								<button class="button">CAKES</button>
-							</li>
-							<li class="filter__element">
-								<button class="button">SWEETS</button>
-							</li>
-							<li class="filter__element">
-								<button class="button">CUPCKAES</button>
-							</li>
-							<li class="filter__element">
-								<button class="button">DOUGHNUTS</button>
-							</li>
-						</ul>
+						<div class="filter none">
+							<button class="button filter__button" data-filter="todos">
+								TODOS
+							</button>
+							<button class="button filter__button" data-filter="pastel">
+								PASTELES
+							</button>
+							<button class="button filter__button" data-filter="cupcakes">
+								CUPCAKES
+							</button>
+							<button class="button filter__button" data-filter="dulce">
+								DULCES
+							</button>
+							<button class="button filter__button" data-filter="rosquilla">
+								ROSQUILLAS
+							</button>
+						</div>
 					</div>
 					<div class="stock">
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card pastel">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/cake-1.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -138,19 +243,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">pastel</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card pastel" >
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/cake-2.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -158,19 +263,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">pastel</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card pastel">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/cake-3.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -178,19 +283,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">pastel</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card cupcakes">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/cupcake-1.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -198,19 +303,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">cupcakes</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card cupcakes">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/cupcake-2.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -218,19 +323,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">cupcakes</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card cupcakes">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/cupcake-3.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -238,19 +343,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">cupcakes</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card rosquilla">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/doughnut-1.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -258,19 +363,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">rosquilla</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card rosquilla">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/doughnut-2.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -278,19 +383,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">rosquilla</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card rosquilla">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/doughnut-3.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -298,19 +403,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">rosquilla</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card dulce">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/sweets-1.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -318,19 +423,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">dulce</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card dulce">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/sweets-2.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -338,19 +443,19 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">dulce</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
-						<div class="cart">
-							<figure class="cart__container--img">
+						<div class="card dulce">
+							<figure class="card__container--img">
 								<img
-									class="cart__img"
+									class="card__img"
 									src="./img/sweets-3.jpeg"
 									alt=""
 								/>
-								<figure class="shopping--cart">
+								<figure class="shopping--cart--add">
 									<img
 										class="shopping--cart__img"
 										src="./fi-rr-shopping-cart-add.svg"
@@ -358,9 +463,9 @@
 									/>
 								</figure>
 							</figure>
-							<div class="cart--body">
-								<p class="cart__name">element stock</p>
-								<span class="cart__value">$ 12.500</span>
+							<div class="card--body">
+								<p class="card__name">dulce</p>
+								<span class="card__value">$ 12.500</span>
 							</div>
 						</div>
 					</div>

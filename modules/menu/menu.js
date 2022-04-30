@@ -1,8 +1,8 @@
-const buy_btn = document.querySelectorAll(".buy-tickets");
+// const buy_btn = document.querySelectorAll(".buy-tickets");
 const menu_btn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
-const scroll_up = document.querySelector(".scroll-up");
-const sections = document.getElementsByTagName("section");
+// const scroll_up = document.querySelector(".scroll-up");
+// const sections = document.getElementsByTagName("section");
 
 menu_btn.addEventListener("click", (e) =>
 {
